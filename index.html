@@ -2,13 +2,13 @@
 layout: default
 title: Home Page
 ---
-<header>
+<header style="background-image: url({{ site.baseurl }}/img/header.jpg);">
 	<div class="header-content">
 		<div class="header-content-inner">
 			<h1>Your Favorite Source of Free Bootstrap Themes</h1>
 			<hr>
 			<p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-			<a href="/about.html" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+			<a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
 		</div>
 	</div>
 </header>
@@ -16,7 +16,7 @@ title: Home Page
 	<div class="container text-center">
 		<div class="call-to-action">
 			<h2>Free Download at Start Bootstrap!</h2>
-			<a href="/services.html" class="btn btn-default btn-xl wow tada">Download Now!</a>
+			<a href="#services" class="btn btn-default btn-xl wow tada">Download Now!</a>
 		</div>
 	</div>
 </aside>
@@ -70,7 +70,7 @@ title: Home Page
 			{% for portfolio_item in site.portfolio %}
 				<div class="col-lg-4 col-sm-6">
 					<a class="portfolio-box">
-						<img src="{{ portfolio_item.image_path }}" class="img-responsive" alt="">
+						<img src="{{ site.baseurl }}/{{ portfolio_item.image_path }}" class="img-responsive" alt="">
 						<div class="portfolio-box-caption">
 							<div class="portfolio-box-caption-content">
 								<div class="project-category text-faded">
