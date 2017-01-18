@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="{{ site.baseurl }}/font-awesome/css/font-awesome.min.css" type="text/css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ site.baseurl }}/css/creative.css" type="text/css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/magnific.css" type="text/css">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -88,10 +89,17 @@
     <script src="{{ site.baseurl }}/js/jquery.fittext.js"></script>
     <script src="{{ site.baseurl }}/js/wow.min.js"></script>
     <script src="{{ site.baseurl }}/js/salvattore.min.js"></script>
-
-
+    <script src="{{ site.baseurl }}/js/parallax.min.js"></script>
+    <script src="{{ site.baseurl }}/js/magnific.min.js"></script>
     <!-- Custom Theme JavaScript -->
     <script src="{{ site.baseurl }}/js/creative.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.image-link').magnificPopup({
+                type: 'image'
+            });
+        });
+    </script>
 </body>
 
 </html>

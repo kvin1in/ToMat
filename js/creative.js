@@ -40,7 +40,9 @@
         offset: {
             top: 100
         }
-    })
+    });
+
+    $('parallax-window').parallax();
 
     // Initialize WOW.js Scrolling Animations
     new WOW().init();
