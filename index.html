@@ -55,14 +55,14 @@ title: Home Page
 
 <section class="parallax-window no-padding" id="portfolio" data-parallax="scroll" data-image-src="https://pp.vk.me/c303603/v303603915/47ec/05N3yGrsfd4.jpg">
     <div class="container-fluid">
-        <div class="row no-gutter masonry" data-columns>
+        <div class="row masonry" data-columns>
             {% for portfolio_item in site.portfolio %}
-            <div class="item" style="margin: 0px 20px">
+            
                 <a href="{{ portfolio_item.image_path }}" class="portfolio-box image-link">
                     <img src="{{ portfolio_item.image_path }}" class="img-responsive" alt="">
                     
                 </a>
-            </div>
+            
             {% endfor %}
         </div>
     </div>
